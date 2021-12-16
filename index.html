@@ -8,7 +8,9 @@
     	    <p> {{ persona.club }} </p>
             <p> {{ persona.dni }} </p>
             <div>
+               {% if persona.foto %}
                 <img src="{{ persona.foto.url }}" alt="{{ persona.nombre }} {{persona.apellido}}">
+                {% endif %}
             </div>
         {% endfor %}
     </body>
